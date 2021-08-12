@@ -1,0 +1,23 @@
+{
+  "name": "D4",
+  "version": "1.0.0",
+  "description": "Data-Driven Websites - Part 1: Setting Up the Project Data-driven websites are everywhere online. From e-commerce websites to search websites to mega social media websites, data is the foundation of the dynamic, personalized experiences that users have come to expect of the Web.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1",
+    "pug": "^3.0.2",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
