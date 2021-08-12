@@ -2,11 +2,16 @@ const express = require("express")
 const app = express()
 const router = require("./routes/routes.js")
 const morgan = require("morgan")
+const csrf = require("csurf")
+const cookieParser = require("cookie-parser")
+
+const csrfProtection = csrf({cookie:true})
+app.use(cookieParser())
+app.use(express.urlencoded({extended:false}))
 
 app.set("view engine","pug")
 app.use(morgan('dev'))
 app.use(router)
-
 
 
 app.use((req, res, next) => {

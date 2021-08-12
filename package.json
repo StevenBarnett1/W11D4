@@ -4,6 +4,8 @@
   "description": "Data-Driven Websites - Part 1: Setting Up the Project Data-driven websites are everywhere online. From e-commerce websites to search websites to mega social media websites, data is the foundation of the dynamic, personalized experiences that users have come to expect of the Web.",
   "main": "app.js",
   "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "per-env": "^1.0.2",
