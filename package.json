@@ -6,16 +6,21 @@
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.10.0",
+    "per-env": "^1.0.2",
     "pg": "^8.7.1",
     "pug": "^3.0.2",
     "sequelize": "^6.6.5",
     "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
+    "dotenv": "^10.0.0",
+    "dotenv-cli": "^4.0.0",
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "per-env",
+    "start:development": "nodemon -r dotenv/config ./bin/www",
+    "start:production": "node ./bin/www"
   },
   "keywords": [],
   "author": "",
