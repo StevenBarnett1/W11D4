@@ -11,6 +11,8 @@ app.use(express.urlencoded({extended:false}))
 
 app.set("view engine","pug")
 app.use(morgan('dev'))
+
+
 app.use(router)
 
 
